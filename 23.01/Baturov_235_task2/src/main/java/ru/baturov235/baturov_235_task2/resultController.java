@@ -2,6 +2,7 @@ package ru.baturov235.baturov_235_task2;
 
 import java.net.URL;
 import java.util.ResourceBundle;
+
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -35,13 +36,12 @@ public class resultController {
     void BtnOnAction(ActionEvent event) {
         int saw = Integer.parseInt(TextField1.getText());
         int was;
-        if (saw > 0){
+        if (saw > 0) {
             was = saw - 8;
         } else {
             was = saw + 6;
         }
         TextField2.setText(String.valueOf(was));
-
     }
 
     @FXML
