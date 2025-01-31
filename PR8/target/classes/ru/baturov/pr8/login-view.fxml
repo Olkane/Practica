@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.baturov.pr8.controllers.LoginController">
+   <children>
+      <GridPane layoutY="39.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="316.0" prefWidth="600.0" style="-fx-background-color: #d9d9d9;">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="293.5999755859375" minWidth="10.0" prefWidth="57.600012207031256" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="529.6000122070312" minWidth="10.0" prefWidth="507.1999877929687" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="332.0" minWidth="10.0" prefWidth="36.200000000000045" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="136.00000610351563" minHeight="10.0" prefHeight="113.59999389648438" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="229.59999389648436" minHeight="10.0" prefHeight="203.20000610351565" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <VBox alignment="CENTER" prefHeight="105.0" prefWidth="506.0" GridPane.columnIndex="1">
+               <children>
+                  <Label alignment="CENTER" prefHeight="18.0" prefWidth="277.0" style="-fx-font-weight: bold; -fx-font-style: italic;" text="Форма авторизации" textFill="#817f7f">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="192.0" prefWidth="597.0" style="-fx-font-weight: bold; -fx-font-style: italic; -fx-wrap-text: true;" text="Пожалуйста, авторизуйтесь в системе, используя ваш адрес электронной почтыи пароль." textAlignment="CENTER" textFill="#817f7f" />
+               </children>
+               <padding>
+                  <Insets top="20.0" />
+               </padding>
+            </VBox>
+            <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Label text="Email:">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <TextField fx:id="emailET" alignment="CENTER" promptText="Enter your email address" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Label text="Password:">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <TextField fx:id="passwordET" alignment="CENTER" promptText="Enter your password" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#onClickLogin" prefHeight="0.0" prefWidth="82.0" style="-fx-background-radius: 5; -fx-background-color: #e3e6e4; -fx-border-color: black; -fx-border-radius: 8; -fx-font-size: 16px;" text="Login" />
+                        <Button mnemonicParsing="false" onAction="#goToBack" prefHeight="6.0" prefWidth="82.0" style="-fx-background-radius: 5; -fx-background-color: #e3e6e4; -fx-border-color: black; -fx-border-radius: 8; -fx-font-size: 16px;" text="Cancel" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+
+         </children>
+      </GridPane>
+      <GridPane prefHeight="45.0" prefWidth="600.0" style="-fx-background-color: #9c9c9c;">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="195.199951171875" minWidth="10.0" prefWidth="124.80003662109375" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="467.1999877929687" minWidth="10.0" prefWidth="389.59996337890624" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="157.5999755859375" minWidth="10.0" prefWidth="87.19997558593741" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button alignment="CENTER" mnemonicParsing="false" onAction="#goToBack" prefHeight="23.0" prefWidth="67.0" style="-fx-background-radius: 5; -fx-background-color: #d9d9d9;" text="Back" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2">
+               <children>
+                  <Button alignment="CENTER" mnemonicParsing="false" onAction="#goToHome" prefHeight="23.0" prefWidth="67.0" style="-fx-background-radius: 5; -fx-background-color: #d9d9d9;" text="Logout" />
+               </children>
+            </HBox>
+            <HBox prefHeight="45.0" prefWidth="345.0" GridPane.columnIndex="1">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="45.0" prefWidth="365.0" style="-fx-font-weight: bold;" text="Maraphon Skills 2016" textFill="WHITE">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </GridPane>
+      <GridPane layoutY="355.0" prefHeight="45.0" prefWidth="600.0" style="-fx-background-color: #9c9c9c;">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="195.199951171875" minWidth="10.0" prefWidth="124.80003662109375" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="467.1999877929687" minWidth="10.0" prefWidth="389.59996337890624" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="157.5999755859375" minWidth="10.0" prefWidth="87.19997558593741" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" />
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2">
+               <children>
+                  <Button alignment="CENTER" mnemonicParsing="false" onAction="#goToHome" prefHeight="23.0" prefWidth="67.0" style="-fx-background-radius: 5; -fx-background-color: #d9d9d9;" text="Logout" />
+               </children>
+            </HBox>
+            <HBox prefHeight="45.0" prefWidth="345.0" GridPane.columnIndex="1">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="45.0" prefWidth="396.0" text="18 дней 8 часов и 17 минут до старта марафона!" textFill="WHITE">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </GridPane>
+   </children>
+</Pane>

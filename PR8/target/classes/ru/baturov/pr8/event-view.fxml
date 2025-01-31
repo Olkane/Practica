@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.baturov.pr8.controllers.EventController">
+   <children>
+      <GridPane prefHeight="45.0" prefWidth="600.0" style="-fx-background-color: #9c9c9c;">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="195.199951171875" minWidth="10.0" prefWidth="124.80003662109375" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="467.1999877929687" minWidth="10.0" prefWidth="389.59996337890624" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="157.5999755859375" minWidth="10.0" prefWidth="87.19997558593741" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button alignment="CENTER" mnemonicParsing="false" onAction="#goToBack" prefHeight="23.0" prefWidth="67.0" style="-fx-background-radius: 5; -fx-background-color: #d9d9d9;" text="Back" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2">
+               <children>
+                  <Button alignment="CENTER" mnemonicParsing="false" onAction="#goToHome" prefHeight="23.0" prefWidth="67.0" style="-fx-background-radius: 5; -fx-background-color: #d9d9d9;" text="Logout" />
+               </children>
+            </HBox>
+            <HBox prefHeight="45.0" prefWidth="345.0" GridPane.columnIndex="1">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="45.0" prefWidth="365.0" style="-fx-font-weight: bold;" text="Maraphon Skills 2016" textFill="WHITE">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </GridPane>
+      <GridPane layoutY="355.0" prefHeight="45.0" prefWidth="600.0" style="-fx-background-color: #9c9c9c;">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="195.199951171875" minWidth="10.0" prefWidth="124.80003662109375" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="467.1999877929687" minWidth="10.0" prefWidth="389.59996337890624" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="157.5999755859375" minWidth="10.0" prefWidth="87.19997558593741" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" />
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2">
+               <children>
+                  <Button alignment="CENTER" mnemonicParsing="false" onAction="#goToHome" prefHeight="23.0" prefWidth="67.0" style="-fx-background-radius: 5; -fx-background-color: #d9d9d9;" text="Logout" />
+               </children>
+            </HBox>
+            <HBox prefHeight="45.0" prefWidth="345.0" GridPane.columnIndex="1">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="45.0" prefWidth="396.0" text="18 дней 8 часов и 17 минут до старта марафона!" textFill="WHITE">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </GridPane>
+<Button layoutX="207.0" layoutY="316.0" mnemonicParsing="false" onAction="#onClickReg" prefHeight="26.0" prefWidth="86.0" style="-fx-background-radius: 5; -fx-background-color: #e3e6e4; -fx-border-color: black; -fx-border-radius: 8; -fx-font-size: 12px;" text="Регестрация" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutY="59.0" prefHeight="119.0" prefWidth="600.0" style="-fx-wrap-text: true;" text="Пожалуйста заполните всю информацию, чтобы зарегистрироваться на SkillsMarathon 2016 проводимом в Москве. Russia. С вами свяжутся послерегистрации для уточнения оплаты и другой информации." textAlignment="CENTER" textFill="#4b4b4b" />
+      <Label alignment="CENTER" layoutX="162.0" layoutY="59.0" prefHeight="18.0" prefWidth="277.0" text="Регистрация на марафон" textFill="#797878">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button layoutX="302.0" layoutY="317.0" mnemonicParsing="false" onAction="#goToBack" prefHeight="26.0" prefWidth="61.0" style="-fx-background-radius: 5; -fx-background-color: #e3e6e4; -fx-border-color: black; -fx-border-radius: 8; -fx-font-size: 12px;" text="Отмена" />
+      <Label alignment="CENTER" layoutX="14.0" layoutY="148.0" prefHeight="18.0" prefWidth="277.0" text="Вид марафона" textFill="#797878">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="309.0" layoutY="148.0" prefHeight="18.0" prefWidth="277.0" text="Варианты комплектов" textFill="#797878">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="-16.0" layoutY="242.0" prefHeight="18.0" prefWidth="277.0" text="Детали спонсорства" textFill="#797878">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <CheckBox layoutX="21.0" layoutY="178.0" mnemonicParsing="false" text="42km Полный марафон($145)" />
+      <CheckBox layoutX="21.0" layoutY="200.0" mnemonicParsing="false" text="21km Полумарафон ($75)" />
+      <CheckBox layoutX="21.0" layoutY="225.0" mnemonicParsing="false" text="5km Малая дистанция ($20)" />
+      <Label layoutX="14.0" layoutY="321.0" text="Взнос:" />
+      <ComboBox fx:id="vsnos" layoutX="59.0" layoutY="317.0" prefHeight="25.0" prefWidth="125.0" />
+      <Label layoutX="8.0" layoutY="281.0" text="Сумма взноса:" />
+      <TextField layoutX="99.0" layoutY="277.0" prefHeight="17.0" prefWidth="125.0" />
+      <Label alignment="CENTER" layoutX="340.0" layoutY="301.0" prefHeight="18.0" prefWidth="277.0" text="Регистрационный взнос" textFill="#797878">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="333.0" layoutY="327.0" prefHeight="30.0" prefWidth="267.0" text="\$0" textFill="#797878">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="R1" layoutX="335.0" layoutY="173.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="252.0" style="-fx-wrap-text: true;" text="Вариант A ($0): Номер бегуна+RFID браслет." />
+      <RadioButton fx:id="R3" layoutX="335.0" layoutY="250.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="252.0" style="-fx-wrap-text: true;" text="Вариант C ($45): Вариант B+футболка + сувенирный буклет." />
+      <RadioButton fx:id="R2" layoutX="335.0" layoutY="211.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="252.0" style="-fx-wrap-text: true;" text="Вариант B ($20): вариант A +бейсболка + бутылка воды." />
+   </children>
+</Pane>
