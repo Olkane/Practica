@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.baturov.pr8.controllers.RegController">
+   <children>
+      <GridPane prefHeight="45.0" prefWidth="600.0" style="-fx-background-color: #9c9c9c;">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="195.199951171875" minWidth="10.0" prefWidth="124.80003662109375" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="467.1999877929687" minWidth="10.0" prefWidth="389.59996337890624" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="157.5999755859375" minWidth="10.0" prefWidth="87.19997558593741" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button alignment="CENTER" mnemonicParsing="false" onAction="#goToBack" prefHeight="23.0" prefWidth="67.0" style="-fx-background-radius: 5; -fx-background-color: #d9d9d9;" text="Back" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2">
+               <children>
+                  <Button alignment="CENTER" mnemonicParsing="false" prefHeight="23.0" prefWidth="67.0" style="-fx-background-radius: 5; -fx-background-color: #d9d9d9;" text="Logout" />
+               </children>
+            </HBox>
+            <HBox prefHeight="45.0" prefWidth="345.0" GridPane.columnIndex="1">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="45.0" prefWidth="365.0" style="-fx-font-weight: bold;" text="Maraphon Skills 2016" textFill="WHITE">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </GridPane>
+      <GridPane layoutY="355.0" prefHeight="45.0" prefWidth="600.0" style="-fx-background-color: #9c9c9c;">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="195.199951171875" minWidth="10.0" prefWidth="124.80003662109375" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="467.1999877929687" minWidth="10.0" prefWidth="389.59996337890624" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="157.5999755859375" minWidth="10.0" prefWidth="87.19997558593741" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" />
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" />
+            <HBox prefHeight="45.0" prefWidth="345.0" GridPane.columnIndex="1">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="45.0" prefWidth="396.0" text="18 дней 8 часов и 17 минут до старта марафона!" textFill="WHITE">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </GridPane>
+<Button layoutX="172.0" layoutY="306.0" mnemonicParsing="false" onAction="#onClickRef" prefHeight="0.0" prefWidth="117.0" style="-fx-background-radius: 5; -fx-background-color: #e3e6e4; -fx-border-color: black; -fx-border-radius: 8; -fx-font-size: 16px;" text="Регестрация" />
+      <Button layoutX="313.0" layoutY="306.0" mnemonicParsing="false" onAction="#goToBack" prefHeight="0.0" prefWidth="117.0" style="-fx-background-radius: 5; -fx-background-color: #e3e6e4; -fx-border-color: black; -fx-border-radius: 8; -fx-font-size: 16px;" text="Отмена" />
+      <Label alignment="CENTER" layoutX="161.0" layoutY="58.0" prefHeight="18.0" prefWidth="277.0" style="-fx-font-weight: bold; -fx-font-style: italic;" text="Регистрация бегуна" textFill="#817f7f">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="10.0" onTouchStationary="#goToHome" prefHeight="192.0" prefWidth="597.0" style="-fx-font-weight: bold; -fx-font-style: italic; -fx-wrap-text: true;" text="Пожалуйста заполните всю информацию, чтобы зарегистрироваться в качествебегуна" textAlignment="CENTER" textFill="#817f7f" />
+      <Label layoutX="14.0" layoutY="122.0" prefHeight="25.0" prefWidth="44.0" text="Email:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="emailET" layoutX="153.0" layoutY="122.0" prefHeight="25.0" prefWidth="125.0" promptText="Email" />
+      <Label layoutX="10.0" layoutY="160.0" prefHeight="25.0" prefWidth="67.0" text="Пароль:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="9.0" layoutY="200.0" prefHeight="25.0" prefWidth="143.0" text="Повторите пароль:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="9.0" layoutY="232.0" prefHeight="25.0" prefWidth="143.0" text="Имя:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="9.0" layoutY="264.0" prefHeight="25.0" prefWidth="143.0" text="Фамилия:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="9.0" layoutY="312.0" prefHeight="25.0" prefWidth="143.0" text="Пол:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="passwordET" layoutX="152.0" layoutY="160.0" prefHeight="25.0" prefWidth="125.0" promptText="Пароль" />
+      <TextField layoutX="152.0" layoutY="200.0" prefHeight="25.0" prefWidth="125.0" promptText="Повторите пароль" />
+      <TextField layoutX="153.0" layoutY="232.0" prefHeight="25.0" prefWidth="125.0" promptText="Имя" />
+      <TextField layoutX="152.0" layoutY="264.0" prefHeight="25.0" prefWidth="125.0" promptText="Фамилия" />
+      <ChoiceBox fx:id="polET" layoutX="55.0" layoutY="312.0" prefHeight="26.0" prefWidth="86.0" />
+      <ImageView fitHeight="53.0" fitWidth="67.0" layoutX="500.0" layoutY="124.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="313.0" layoutY="264.0" prefHeight="25.0" prefWidth="143.0" text="Страна:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="stranaET" layoutX="387.0" layoutY="265.0" prefHeight="25.0" prefWidth="86.0" />
+      <Label layoutX="313.0" layoutY="232.0" prefHeight="25.0" prefWidth="143.0" text="Дата рождения:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <DatePicker layoutX="430.0" layoutY="232.0" prefHeight="25.0" prefWidth="159.0" promptText="1978-07-16" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="53.0" layoutX="510.0" layoutY="121.0" stroke="BLACK" strokeType="INSIDE" width="67.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.09795711189508438" green="0.08748538047075272" blue="0.7157894968986511" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.621052622795105" green="0.1564132571220398" blue="0.1564132571220398" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Button layoutX="460.0" layoutY="189.0" mnemonicParsing="false" prefHeight="0.0" prefWidth="117.0" style="-fx-background-radius: 5; -fx-background-color: #e3e6e4; -fx-border-color: black; -fx-border-radius: 8; -fx-font-size: 12px;" text="Просмотр" />
+      <TextField layoutX="311.0" layoutY="190.0" prefHeight="25.0" prefWidth="135.0" promptText="Photo_logo.jpg" />
+      <Label layoutX="309.0" layoutY="151.0" prefHeight="25.0" prefWidth="67.0" text="Фото файл:" />
+   </children>
+</Pane>

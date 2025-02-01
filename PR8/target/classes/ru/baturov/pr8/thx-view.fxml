@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.baturov.pr8.controllers.thxController">
+   <children>
+      <GridPane prefHeight="45.0" prefWidth="600.0" style="-fx-background-color: #9c9c9c;">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="195.199951171875" minWidth="10.0" prefWidth="124.80003662109375" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="467.1999877929687" minWidth="10.0" prefWidth="389.59996337890624" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="157.5999755859375" minWidth="10.0" prefWidth="87.19997558593741" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button alignment="CENTER" mnemonicParsing="false" onAction="#goToBack" prefHeight="23.0" prefWidth="67.0" style="-fx-background-radius: 5; -fx-background-color: #d9d9d9;" text="Back" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2">
+               <children>
+                  <Button alignment="CENTER" mnemonicParsing="false" onAction="#goToHome" prefHeight="23.0" prefWidth="67.0" style="-fx-background-radius: 5; -fx-background-color: #d9d9d9;" text="Logout" />
+               </children>
+            </HBox>
+            <HBox prefHeight="45.0" prefWidth="345.0" GridPane.columnIndex="1">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="45.0" prefWidth="365.0" style="-fx-font-weight: bold;" text="Maraphon Skills 2016" textFill="WHITE">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </GridPane>
+      <GridPane layoutY="355.0" prefHeight="45.0" prefWidth="600.0" style="-fx-background-color: #9c9c9c;">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="195.199951171875" minWidth="10.0" prefWidth="124.80003662109375" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="467.1999877929687" minWidth="10.0" prefWidth="389.59996337890624" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="157.5999755859375" minWidth="10.0" prefWidth="87.19997558593741" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" />
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" />
+            <HBox prefHeight="45.0" prefWidth="345.0" GridPane.columnIndex="1">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="45.0" prefWidth="396.0" text="18 дней 8 часов и 17 минут до старта марафона!" textFill="WHITE">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </GridPane>
+<Button layoutX="262.0" layoutY="169.0" mnemonicParsing="false" onAction="#goToHome" prefHeight="3.0" prefWidth="77.0" style="-fx-background-radius: 5; -fx-background-color: #e3e6e4; -fx-border-color: black; -fx-border-radius: 8; -fx-font-size: 16px;" text="OK" />
+      <Label alignment="CENTER" layoutY="60.0" prefHeight="30.0" prefWidth="600.0" text="Спасибо за вашу регистрацию в качествебегуна!" textFill="#868484">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="-2.0" layoutY="52.0" prefHeight="117.0" prefWidth="606.0" text="Спасибо за вашу регистрацию в качестве бегуна в Marathon Skills 2016!" textFill="#868484">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="-2.0" layoutY="83.0" prefHeight="117.0" prefWidth="606.0" text="С вами свяжутся по поводу оплаты." textFill="#868484">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>
